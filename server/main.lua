@@ -39,10 +39,10 @@ ESX.RegisterServerCallback('qb-tattooshop:PurchaseTattoo', function(source, cb, 
 			['@identifier'] = Player.identifier
 		})
 
-		TriggerClientEvent('QBCore:Notify', source, "You have bought the " .. tattooName .. " tattoo for $" .. price, 'success')
+		--TriggerClientEvent('QBCore:Notify', source, "You have bought the " .. tattooName .. " tattoo for $" .. price, 'success')
 		cb(true)
 	else
-		TriggerClientEvent('QBCore:Notify', source, "You do not have enough money for this tattoo", 'success')
+	--	TriggerClientEvent('QBCore:Notify', source, "You do not have enough money for this tattoo", 'success')
 
 		cb(false)
 	end
